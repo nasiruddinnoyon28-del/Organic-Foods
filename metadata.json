@@ -1,0 +1,6 @@
+{
+  "name": "অর্গানিক বিডি - Organic Foods BD",
+  "description": "১০০% খাঁটি ও অর্গানিক খাদ্য সামগ্রীর বিশ্বস্ত ই-কমার্স প্ল্যাটফর্ম।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

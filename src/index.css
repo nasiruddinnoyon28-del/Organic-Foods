@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --color-secondary-fixed: #b2f3a8;
+  --color-surface-dim: #d6dcd3;
+  --color-inverse-surface: #2c322c;
+  --color-tertiary-fixed: #ffdea2;
+  --color-on-primary-fixed-variant: #1a5038;
+  --color-on-tertiary-container: #dbaa3f;
+  --color-error-container: #ffdad6;
+  --color-background: #f5fbf1;
+  --color-inverse-on-surface: #edf3e9;
+  --color-surface-container-high: #e4eae0;
+  --color-primary-fixed-dim: #9cd3b3;
+  --color-tertiary: #3d2b00;
+  --color-on-tertiary-fixed-variant: #5c4200;
+  --color-surface: #f5fbf1;
+  --color-surface-container: #eaf0e6;
+  --color-on-background: #171d17;
+  --color-surface-tint: #34684e;
+  --color-error: #ba1a1a;
+  --color-surface-container-highest: #dee4db;
+  --color-on-secondary-container: #377135;
+  --color-outline-variant: #c0c9c1;
+  --color-on-surface: #171d17;
+  --color-primary-fixed: #b7efce;
+  --color-on-error: #ffffff;
+  --color-on-secondary: #ffffff;
+  --color-on-primary-fixed: #002113;
+  --color-on-tertiary: #ffffff;
+  --color-surface-variant: #dee4db;
+  --color-secondary-fixed-dim: #97d68f;
+  --color-on-surface-variant: #404943;
+  --color-on-tertiary-fixed: #261900;
+  --color-primary-container: #174d35;
+  --color-inverse-primary: #9cd3b3;
+  --color-tertiary-container: #594000;
+  --color-secondary-container: #b2f3a8;
+  --color-primary: #003521;
+  --color-outline: #717973;
+  --color-on-primary-container: #87bd9e;
+  --color-secondary: #316a2f;
+  --color-on-primary: #ffffff;
+  --color-surface-container-low: #eff5ec;
+  --color-on-secondary-fixed: #002203;
+  --color-surface-bright: #f5fbf1;
+  --color-on-error-container: #93000a;
+  --color-tertiary-fixed-dim: #f2bf52;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-secondary-fixed-variant: #16521a;
+
+  --font-headline-lg: 'Hind Siliguri', sans-serif;
+  --font-headline-md: 'Hind Siliguri', sans-serif;
+  --font-headline-sm: 'Hind Siliguri', sans-serif;
+  --font-display-hero: 'Hind Siliguri', sans-serif;
+  --font-body-lg: 'Inter', sans-serif;
+  --font-body-md: 'Inter', sans-serif;
+  --font-body-sm: 'Inter', sans-serif;
+  --font-title-md: 'Inter', sans-serif;
+  --font-price-md: 'Inter', sans-serif;
+  --font-price-lg: 'Inter', sans-serif;
+  --font-label-md: 'Inter', sans-serif;
+  --font-label-sm: 'Inter', sans-serif;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind Siliguri', 'Inter', sans-serif;
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Hide scrollbars for smooth horizontal carousel */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Material Symbols fill utility */
+.fill-1 {
+  font-variation-settings: 'FILL' 1;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 12px);
+}
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
